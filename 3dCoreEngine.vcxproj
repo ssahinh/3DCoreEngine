@@ -121,33 +121,33 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="game.cpp" />
-    <ClCompile Include="mat4.cpp" />
-    <ClCompile Include="model.cpp" />
+    <ClCompile Include="core\entity.cpp" />
+    <ClCompile Include="core\mesh.cpp" />
+    <ClCompile Include="core\model.cpp" />
+    <ClCompile Include="core\shader.cpp" />
+    <ClCompile Include="maths\mat4.cpp" />
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="mesh.cpp" />
-    <ClCompile Include="entity.cpp" />
-    <ClCompile Include="shader.cpp" />
-    <ClCompile Include="texture2D.cpp" />
-    <ClCompile Include="window.cpp" />
+    <ClCompile Include="rendering\game.cpp" />
+    <ClCompile Include="rendering\texture2D.cpp" />
+    <ClCompile Include="rendering\window.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="camera.hpp" />
-    <ClInclude Include="game.hpp" />
-    <ClInclude Include="mat4.hpp" />
-    <ClInclude Include="math_util.hpp" />
-    <ClInclude Include="model.hpp" />
-    <ClInclude Include="mesh.hpp" />
-    <ClInclude Include="entity.hpp" />
-    <ClInclude Include="quaternion.hpp" />
-    <ClInclude Include="shader.hpp" />
-    <ClInclude Include="smath.hpp" />
-    <ClInclude Include="stb_image.h" />
-    <ClInclude Include="texture2D.hpp" />
-    <ClInclude Include="vec2.hpp" />
-    <ClInclude Include="vec3.hpp" />
-    <ClInclude Include="vec4.hpp" />
-    <ClInclude Include="window.hpp" />
+    <ClInclude Include="core\entity.hpp" />
+    <ClInclude Include="core\mesh.hpp" />
+    <ClInclude Include="core\model.hpp" />
+    <ClInclude Include="core\shader.hpp" />
+    <ClInclude Include="core\stb_image.h" />
+    <ClInclude Include="maths\mat4.hpp" />
+    <ClInclude Include="maths\math_util.hpp" />
+    <ClInclude Include="maths\quaternion.hpp" />
+    <ClInclude Include="maths\smath.hpp" />
+    <ClInclude Include="maths\vec2.hpp" />
+    <ClInclude Include="maths\vec3.hpp" />
+    <ClInclude Include="maths\vec4.hpp" />
+    <ClInclude Include="rendering\camera.hpp" />
+    <ClInclude Include="rendering\game.hpp" />
+    <ClInclude Include="rendering\texture2D.hpp" />
+    <ClInclude Include="rendering\window.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="main_frag.glsl" />

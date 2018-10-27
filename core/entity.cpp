@@ -1,5 +1,5 @@
 #include "entity.hpp"
-#include "camera.hpp"
+#include "../rendering/camera.hpp"
 
 Camera* camera;
 static bool firstMouse = true;

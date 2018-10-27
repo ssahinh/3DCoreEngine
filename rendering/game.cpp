@@ -1,5 +1,5 @@
 #include "game.hpp"
-#include "shader.hpp"
+#include "../core/shader.hpp"
 
 Game::Game(GLuint width, GLuint height)
 	:Width(width), Height(height)

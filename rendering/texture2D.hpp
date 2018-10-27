@@ -4,8 +4,8 @@
 #define GLEW_STATIC
 #include <GL/glew.h>
 
-#include "model.hpp"
-#include "stb_image.h"
+#include "../core/model.hpp"
+#include "../core/stb_image.h"
 
 class Texture2D
 {

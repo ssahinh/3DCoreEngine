@@ -15,7 +15,6 @@
 #include "shader.hpp"
 #include "mesh.hpp"
 #include "model.hpp"
-#include "camera.hpp"
 
 class Entity
 {

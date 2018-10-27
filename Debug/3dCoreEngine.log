@@ -1,4 +1,1 @@
-﻿  main.cpp
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\math_util.hpp(8): warning C4244: 'return': 'double' - 'float' dönüşümü; veri kaybı olabilir
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\main.cpp(114): warning C4244: 'başlatılıyor': 'double' - 'GLfloat' dönüşümü; veri kaybı olabilir
-  3dCoreEngine.vcxproj -> C:\Users\şahin\source\repos\3dCoreEngine\Debug\3dCoreEngine.exe
+﻿  3dCoreEngine.vcxproj -> C:\Users\şahin\source\repos\3dCoreEngine\Debug\3dCoreEngine.exe

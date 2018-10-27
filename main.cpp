@@ -4,25 +4,25 @@
 
 #include <iostream>
 
-#include "game.hpp"
-#include "camera.hpp"
-#include "shader.hpp"
-#include "entity.hpp"
-#include "model.hpp"
-#include "window.hpp"
-#include "texture2D.hpp"
+#include "rendering/game.hpp"
+#include "rendering/camera.hpp"
+#include "core/shader.hpp"
+#include "core/entity.hpp"
+#include "core/model.hpp"
+#include "rendering/window.hpp"
+#include "rendering/texture2D.hpp"
 
-#include "vec2.hpp"
-#include "vec3.hpp"
-#include "vec4.hpp"
-#include "mat4.hpp"
+#include "maths/vec2.hpp"
+#include "maths/vec3.hpp"
+#include "maths/vec4.hpp"
+#include "maths/mat4.hpp"
 
 #include <glm/glm.hpp>
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
 //#define STB_IMAGE_IMPLEMENTATION
-#include "stb_image.h"
+#include "core/stb_image.h"
 
 void key_callback(GLFWwindow* window, int key, int scancode, int action, int mode);
 void callbacks();
