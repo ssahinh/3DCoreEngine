@@ -92,7 +92,7 @@
   <ItemGroup>
     <None Include="main_vertex.glsl" />
     <None Include="main_frag.glsl" />
-    <None Include="plane_vertex.glsl" />
-    <None Include="plane_fragment.glsl" />
+    <None Include="lamp_fragment.glsl" />
+    <None Include="lamp_vertex.glsl" />
   </ItemGroup>
 </Project>

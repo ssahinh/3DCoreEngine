@@ -21,7 +21,6 @@ class Entity
 {
 public:
 	Entity();
-	Entity(Model model, glm::vec3 position, GLfloat rotX, GLfloat rotY, GLfloat rotZ);
 	
 	bool Keys[1024];
 
@@ -33,12 +32,6 @@ public:
 	static void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 	static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 	
-private:
-	Model model;
-	glm::vec3 position;
-	GLfloat rotX, rotY, rotZ;
-	GLfloat scale;
-
 };
 
 #endif

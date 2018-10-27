@@ -6,18 +6,16 @@ static bool firstMouse = true;
 static GLfloat lastX = 400;
 static GLfloat lastY = 300;
 
+glm::vec3 model_position = glm::vec3(0.0f, -1.75f, -1.0f);
+glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 Entity::Entity()
 {
 	camera = new Camera(glm::vec3(0.0f, 0.0f, 3.0f));
 }
 
-Entity::Entity(Model model, glm::vec3 position, GLfloat rotX, GLfloat rotY, GLfloat rotZ)
-	:model(model), position(position), rotX(rotX), rotY(rotY), rotZ(rotZ)
-{
-}
-
 void Entity::Draw(Shader shader, Model g_model)
 {
+	//model_position.x += 0.001f;
 	// shaderý usela amk þunu yapmadan önce
 	shader.use();
 	glm::mat4 view = glm::mat4(1.0f);
@@ -30,7 +28,7 @@ void Entity::Draw(Shader shader, Model g_model)
 	shader.SetMatrix4("projection", projection);
 
 	glm::mat4 model = glm::mat4(1.0f);
-	model = glm::translate(model, glm::vec3(0.0f, -1.75f, -1.0f));
+	model = glm::translate(model, model_position);
 	model = glm::scale(model, glm::vec3(0.2f, 0.2f, 0.2f));
 	shader.SetMatrix4("model", model);
 	g_model.Draw(shader);
