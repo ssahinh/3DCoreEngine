@@ -122,24 +122,26 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="game.cpp" />
+    <ClCompile Include="mat4.cpp" />
     <ClCompile Include="model.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mesh.cpp" />
     <ClCompile Include="entity.cpp" />
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="texture2D.cpp" />
-    <ClCompile Include="vec2.cpp" />
     <ClCompile Include="window.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="camera.hpp" />
     <ClInclude Include="game.hpp" />
     <ClInclude Include="mat4.hpp" />
+    <ClInclude Include="math_util.hpp" />
     <ClInclude Include="model.hpp" />
     <ClInclude Include="mesh.hpp" />
     <ClInclude Include="entity.hpp" />
     <ClInclude Include="quaternion.hpp" />
     <ClInclude Include="shader.hpp" />
+    <ClInclude Include="smath.hpp" />
     <ClInclude Include="stb_image.h" />
     <ClInclude Include="texture2D.hpp" />
     <ClInclude Include="vec2.hpp" />

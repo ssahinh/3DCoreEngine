@@ -15,6 +15,7 @@
 #include "vec2.hpp"
 #include "vec3.hpp"
 #include "vec4.hpp"
+#include "mat4.hpp"
 
 //#define STB_IMAGE_IMPLEMENTATION
 #include "stb_image.h"
@@ -29,10 +30,12 @@ const std::string& title = "OpenGL";
 Entity entity;
 Window window(SCR_WIDTH, SCR_HEIGHT);
 
+using namespace math;
+
 int main()
 {
 
-	math::Vec2<GLfloat> asd(1.0f, 2.0f);
+	Mat4 position = Mat4::translation(Vec3<GLfloat>(2.0f, 3.0f, 4.0f));
 
 	window.Init(SCR_WIDTH, SCR_HEIGHT, "hatred");
 

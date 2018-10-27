@@ -11,30 +11,18 @@ namespace math
 	public:
 		T x;
 		T y;
-
-		template<typename T>
-		Vec2();
-
-		template<typename T>
-		Vec2(T x, T y);
 		
-		template<typename T>
-		Vec2<T>& operator+(const Vec2<T>& r);
-		
-		
-		
-		/*
 		template<typename T>
 		Vec2()
 		: x(0), y(0)
 		{}
+
 		template<typename T>
 		Vec2(T x, T y) { 
 			this->x = x;
 			this->y = y;
 		}
 
-		
 		// ADDITION
 		template<typename T>
 		Vec2<T>& operator+(const Vec2<T>& r)
@@ -105,7 +93,7 @@ namespace math
 			stream << "vec2: (" << vector.x << ", " << vector.y << ")";
 			return stream;
 		}
-		*/
+		
 	};
 	
 
