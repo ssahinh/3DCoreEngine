@@ -28,12 +28,11 @@ public:
 	void Draw(Shader shader, Model model);
 	void Input(GLFWwindow *window, GLfloat dt);
 
-	/*
+	
 	static void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 	static void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 	static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-	*/
-
+	
 private:
 	Model model;
 	glm::vec3 position;

@@ -127,7 +127,6 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="mesh.cpp" />
     <ClCompile Include="entity.cpp" />
-    <ClCompile Include="renderer.cpp" />
     <ClCompile Include="shader.cpp" />
     <ClCompile Include="texture2D.cpp" />
     <ClCompile Include="window.cpp" />
@@ -141,7 +140,6 @@
     <ClInclude Include="mesh.hpp" />
     <ClInclude Include="entity.hpp" />
     <ClInclude Include="quaternion.hpp" />
-    <ClInclude Include="renderer.hpp" />
     <ClInclude Include="shader.hpp" />
     <ClInclude Include="smath.hpp" />
     <ClInclude Include="stb_image.h" />

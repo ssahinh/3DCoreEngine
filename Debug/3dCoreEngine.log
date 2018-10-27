@@ -1,17 +1,9 @@
 ﻿  entity.cpp
-  main.cpp
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\math_util.hpp(8): warning C4244: 'return': 'double' - 'float' dönüşümü; veri kaybı olabilir
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\main.cpp(87): warning C4244: 'başlatılıyor': 'double' - 'GLfloat' dönüşümü; veri kaybı olabilir
-  renderer.cpp
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\renderer.cpp(39): warning C4244: '=': 'double' - 'GLfloat' dönüşümü; veri kaybı olabilir
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\renderer.cpp(40): warning C4244: '=': 'double' - 'GLfloat' dönüşümü; veri kaybı olabilir
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\renderer.cpp(44): warning C4244: 'başlatılıyor': 'double' - 'float' dönüşümü; veri kaybı olabilir
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\renderer.cpp(45): warning C4244: 'başlatılıyor': 'double' - 'float' dönüşümü; veri kaybı olabilir
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\renderer.cpp(46): warning C4244: '=': 'double' - 'GLfloat' dönüşümü; veri kaybı olabilir
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\renderer.cpp(47): warning C4244: '=': 'double' - 'GLfloat' dönüşümü; veri kaybı olabilir
-c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\renderer.cpp(54): warning C4244: 'bağımsız değişken': 'double' - 'float' dönüşümü; veri kaybı olabilir
-  Kod Üretiliyor...
-LINK : warning LNK4098: defaultlib 'MSVCRT' diğer kitaplıkların kullanımı ile çakışıyor; /NODEFAULTLIB:library kullanın
-LINK : warning LNK4098: defaultlib 'LIBCMT' diğer kitaplıkların kullanımı ile çakışıyor; /NODEFAULTLIB:library kullanın
-glew32s.lib(glew.obj) : warning LNK4099: PDB 'vc120.pdb', 'glew32s.lib(glew.obj)' ile veya 'C:\Users\şahin\source\repos\3dCoreEngine\Debug\vc120.pdb' üzerinde bulunamadı; nesne, hata ayıklama bilgileri yokmuş gibi bağlanıyor
+c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\entity.cpp(56): warning C4244: '=': 'double' - 'GLfloat' dönüşümü; veri kaybı olabilir
+c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\entity.cpp(57): warning C4244: '=': 'double' - 'GLfloat' dönüşümü; veri kaybı olabilir
+c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\entity.cpp(61): warning C4244: 'başlatılıyor': 'double' - 'float' dönüşümü; veri kaybı olabilir
+c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\entity.cpp(62): warning C4244: 'başlatılıyor': 'double' - 'float' dönüşümü; veri kaybı olabilir
+c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\entity.cpp(63): warning C4244: '=': 'double' - 'GLfloat' dönüşümü; veri kaybı olabilir
+c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\entity.cpp(64): warning C4244: '=': 'double' - 'GLfloat' dönüşümü; veri kaybı olabilir
+c:\users\şahin\source\repos\3dcoreengine\3dcoreengine\entity.cpp(71): warning C4244: 'bağımsız değişken': 'double' - 'float' dönüşümü; veri kaybı olabilir
   3dCoreEngine.vcxproj -> C:\Users\şahin\source\repos\3dCoreEngine\Debug\3dCoreEngine.exe

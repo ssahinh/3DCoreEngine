@@ -11,7 +11,6 @@
 #include "model.hpp"
 #include "window.hpp"
 #include "texture2D.hpp"
-#include "renderer.hpp"
 
 #include "vec2.hpp"
 #include "vec3.hpp"
@@ -34,7 +33,6 @@ const std::string& title = "OpenGL";
 
 Entity entity;
 Window window(SCR_WIDTH, SCR_HEIGHT);
-Renderer renderer;
 
 using namespace math;
 
@@ -45,7 +43,9 @@ int main()
 	callbacks();
 	Shader shader("main_vertex.glsl", "main_frag.glsl");
 	Shader planeShader("plane_vertex.glsl", "plane_fragment.glsl");
-	static Model testModel("assimp_test/untitled.obj");
+	//Shader shader("main_vertex.glsl", "main_frag.glsl");
+	//Shader planeShader("plane_vertex.glsl", "plane_fragment.glsl");
+	Model testModel("assimp_test/untitled.obj");
 	
 	//Engine.Init();
 	
@@ -91,8 +91,7 @@ int main()
 
 		// Input
 		//Engine.ProcessInput(deltaTime);
-		//entity.Input(window.window, deltaTime);
-		renderer.Input(window.window, deltaTime);
+		entity.Input(window.window, deltaTime);
 		// Update
 		//Engine.Update(deltaTime);
 		// Render
@@ -120,8 +119,8 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
 
 void callbacks()
 {
-	glfwSetFramebufferSizeCallback(window.window, renderer.framebuffer_size_callback);
+	glfwSetFramebufferSizeCallback(window.window, entity.framebuffer_size_callback);
 	glfwSetKeyCallback(window.window, key_callback);
-	glfwSetCursorPosCallback(window.window, renderer.mouse_callback);
-	glfwSetScrollCallback(window.window, renderer.scroll_callback);
+	glfwSetCursorPosCallback(window.window, entity.mouse_callback);
+	glfwSetScrollCallback(window.window, entity.scroll_callback);
 }
