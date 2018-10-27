@@ -38,6 +38,9 @@
     <ClCompile Include="mat4.cpp">
       <Filter>Kaynak Dosyalar</Filter>
     </ClCompile>
+    <ClCompile Include="renderer.cpp">
+      <Filter>Kaynak Dosyalar</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.hpp">
@@ -88,9 +91,14 @@
     <ClInclude Include="math_util.hpp">
       <Filter>Üst Bilgi Dosyaları</Filter>
     </ClInclude>
+    <ClInclude Include="renderer.hpp">
+      <Filter>Üst Bilgi Dosyaları</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="main_vertex.glsl" />
     <None Include="main_frag.glsl" />
+    <None Include="plane_vertex.glsl" />
+    <None Include="plane_fragment.glsl" />
   </ItemGroup>
 </Project>

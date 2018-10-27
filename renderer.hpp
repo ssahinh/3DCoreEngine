@@ -1,5 +1,5 @@
-#ifndef ENTITY_HPP
-#define ENTITY_HPP
+#ifndef RENDERER_HPP
+#define RENDERER_HPP
 
 #define GLEW_STATIC
 #include <GL/glew.h>
@@ -9,36 +9,22 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
-#include <iostream>
-#include <string>
-
 #include "shader.hpp"
-#include "mesh.hpp"
-#include "model.hpp"
 #include "camera.hpp"
 
-class Entity
+class Renderer
 {
 public:
-	Entity();
-	Entity(Model model, glm::vec3 position, GLfloat rotX, GLfloat rotY, GLfloat rotZ);
-	
-	bool Keys[1024];
+	Renderer();
+	~Renderer();
 
-	void Draw(Shader shader, Model model);
-	void Input(GLFWwindow *window, GLfloat dt);
+	void Init();
+	void Input(GLFWwindow* window, GLfloat dt);
+	glm::mat4 GetViewMatrix();
 
-	/*
 	static void mouse_callback(GLFWwindow* window, double xpos, double ypos);
 	static void scroll_callback(GLFWwindow* window, double xoffset, double yoffset);
 	static void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-	*/
-
-private:
-	Model model;
-	glm::vec3 position;
-	GLfloat rotX, rotY, rotZ;
-	GLfloat scale;
 
 };
 
