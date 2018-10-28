@@ -2,8 +2,6 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-#include <irrKlang.h>
-
 #include <iostream>
 
 #include "rendering/game.hpp"
@@ -23,6 +21,8 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 
+#include "audio/audio_manager.hpp"
+
 //#define STB_IMAGE_IMPLEMENTATION
 #include "core/stb_image.h"
 
@@ -35,11 +35,9 @@ const std::string& title = "OpenGL";
 
 Entity entity;
 Window window(SCR_WIDTH, SCR_HEIGHT);
+AudioManager audio_test;
 
 using namespace math;
-using namespace irrklang;
-
-ISoundEngine *SoundEngine = createIrrKlangDevice();
 
 int main()
 {
@@ -60,8 +58,8 @@ int main()
 	shader.use();
 	shader.SetInteger("texture1", 0);
 	
-	SoundEngine->play2D("breakout.mp3", GL_TRUE);
-
+	audio_test.play2D("breakout.mp3", GL_TRUE);
+	
 	while (!glfwWindowShouldClose(window.window))
 	{
 		GLfloat currentFrame = glfwGetTime();
