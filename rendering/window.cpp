@@ -39,6 +39,5 @@ void Window::Init(GLuint Width, GLuint Height, const std::string & title)
 	glewInit();
 	glGetError();
 
-	glEnable(GL_CULL_FACE);
-	glEnable(GL_DEPTH_TEST);
+//	glEnable(GL_CULL_FACE);
 }

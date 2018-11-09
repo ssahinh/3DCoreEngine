@@ -131,6 +131,7 @@
     <ClCompile Include="rendering\game.cpp" />
     <ClCompile Include="rendering\texture2D.cpp" />
     <ClCompile Include="rendering\window.cpp" />
+    <ClCompile Include="core\vertex_object.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="audio\audio_manager.hpp" />
@@ -150,6 +151,7 @@
     <ClInclude Include="rendering\game.hpp" />
     <ClInclude Include="rendering\texture2D.hpp" />
     <ClInclude Include="rendering\window.hpp" />
+    <ClInclude Include="core\vertex_object.hpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="main_frag.glsl" />
